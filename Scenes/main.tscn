@@ -15,7 +15,7 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Paddle" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("1_d25i7")]
-position = Vector2(0, 283)
+position = Vector2(2.08165e-12, 290)
 collision_layer = 2
 lock_rotation = true
 camera = NodePath("../Camera2D")
