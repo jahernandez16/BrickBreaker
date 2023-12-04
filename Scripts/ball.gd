@@ -17,6 +17,8 @@ var last_collider_id
 
 @onready var collision_shape_2d = $CollisionShape2D
   
+@onready var flame = $flame
+var flame_rotation = 1
 
 func _ready():
 	ui.set_lives(lives)
