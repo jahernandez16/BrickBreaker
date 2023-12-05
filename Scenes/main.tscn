@@ -28,8 +28,6 @@ death_zone = NodePath("../DeathZone")
 ui = NodePath("../UI")
 
 [node name="flame" parent="Ball" instance=ExtResource("4_on3u7")]
-scale = Vector2(0.5, 0.5)
-amount = 8
 trail_lifetime = 0.1
 
 [node name="Walls" type="Node" parent="."]
