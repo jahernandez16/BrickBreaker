@@ -11,7 +11,7 @@ const VELOCITY_LIMIT = 40
 @export var death_zone: DeathZone
 @export var ui: UI
 
-var speed_up_factor = 1.05
+var speed_up_factor = 1.00
 var start_position: Vector2
 var last_collider_id
 
@@ -30,7 +30,7 @@ func  _physics_process(delta):
 	if (!collision):
 		return
 		
-		
+	flame.rotation += flame_rotation * delta	
 	var collider = collision.get_collider()
 	if collider is Brick:
 		collider.decrease_level()
