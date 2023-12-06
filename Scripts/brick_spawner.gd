@@ -8,6 +8,8 @@ const ROWS = 6
 @onready var ball= $"../Ball" as Ball
 @onready var ui = $"../UI" as UI
 
+
+
 @export var brick_scene: PackedScene
 @export var margin: Vector2 = Vector2(8,8)
 @export var spawn_start: Marker2D

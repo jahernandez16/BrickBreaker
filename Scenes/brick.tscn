@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d06ws4g0pu0q0" path="res://Assets/Brick-Blue.png" id="1_m6it2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nuhdd"]
-size = Vector2(99, 25)
+size = Vector2(97, 25)
 
 [node name="Brick" type="RigidBody2D"]
 scale = Vector2(2, 2)
@@ -16,9 +16,9 @@ script = ExtResource("1_h1w5k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
-scale = Vector2(0.25, 0.251)
+scale = Vector2(0.249, 0.25)
 texture = ExtResource("1_m6it2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.08165e-12)
+position = Vector2(2.08165e-12, 2.08165e-12)
 shape = SubResource("RectangleShape2D_nuhdd")

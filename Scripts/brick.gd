@@ -18,6 +18,7 @@ var sprites: Array[Texture2D] = [
 	preload("res://Assets/Brick-Red.png")
 ]
 
+
 func get_size():
 	return collision_shape_2d.shape.get_rect().size * sprite_2d.scale
 	
@@ -26,6 +27,7 @@ func set_level(new_level: int):
 		level = new_level
 		sprite_2d.texture = sprites[new_level - 1]
 		
+
 func decrease_level():
 	if level > 1:
 		set_level(level - 1)
@@ -33,6 +35,7 @@ func decrease_level():
 		fade_out()
 		
 		
+
 func fade_out():
 	collision_shape_2d.disabled = true
 	var tween = get_tree().create_tween()

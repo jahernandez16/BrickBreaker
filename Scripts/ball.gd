@@ -4,10 +4,10 @@ class_name Ball
 
 signal life_lost 
 
-const VELOCITY_LIMIT = 40
+const VELOCITY_LIMIT = 35
 
 @export var ball_speed = 15
-@export var lives = 3
+@export var lives = 5
 @export var death_zone: DeathZone
 @export var ui: UI
 
@@ -62,7 +62,7 @@ func reset_ball():
 	
 func ball_collison(collider):
 	
-	var ball_width = collision_shape_2d.shape.get_rect().size.x
+	var _ball_width = collision_shape_2d.shape.get_rect().size.x
 	var ball_center_x = position.x
 	var collider_width = collider.get_width()  	
 	var colllider_center_x = collider.position.x
